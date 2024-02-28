@@ -16,6 +16,14 @@
     font-style: normal;
 }
 
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 .col-1 {
     width: 8.33%;
 }
@@ -70,6 +78,10 @@
 
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -160,4 +172,37 @@ header h1 {
 
 .menu li:hover {
     background-color: #f0f0f0;
+}
+
+.aboutUsImgContainer {
+    background-color: var(--blue);
+    padding: 15px;
+}
+
+.aboutUsImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+#welcome {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+}
+
+#toWillyNilly {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+    text-align: end;
+}
+
+#aboutUs {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+}
+
+#aboutUs h2 {
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    border-bottom: 1px solid var(--blue);
+    text-align: center;
 }
