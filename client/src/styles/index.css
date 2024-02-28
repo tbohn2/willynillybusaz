@@ -1,0 +1,11 @@
+:root {
+    --blue: #43727a;
+}
+
+body {
+    background-image: url('../assets/topFlower.png'), url('../assets/bottomFlower.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-attachment: fixed;
+    background-size: 75%, 75%;
+}
