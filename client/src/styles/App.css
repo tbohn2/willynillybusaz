@@ -24,6 +24,21 @@ h2 {
     font-size: 30px;
 }
 
+input,
+textarea {
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid var(--blue);
+    background-color: white;
+    box-shadow: 0 0 5px var(--blue);
+}
+
 .col-1 {
     width: 8.33%;
 }
@@ -205,4 +220,32 @@ header h1 {
     margin: 0;
     border-bottom: 1px solid var(--blue);
     text-align: center;
+}
+
+#contactUs {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+}
+
+#contactUs form {
+    padding: 5px;
+    border-radius: 7px;
+    background-color: var(--light-blue);
+    font-size: 24px;
+}
+
+#contactUs form input,
+#contactUs form textarea {
+    font-size: 20px;
+}
+
+#contactUs form button {
+    padding: 5px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
