@@ -33,7 +33,7 @@ const Header = () => {
             <div className="menu-container" onClick={handleMenuContainerClick}>
                 <button type="button" className="menu-icon text-center" onClick={handleMenuClick}>&#9776;</button>
                 <ul className={menuOpen ? 'menu display-block' : 'hidden'}>
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
