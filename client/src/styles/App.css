@@ -250,3 +250,42 @@ header h1 {
     font-size: 24px;
     cursor: pointer;
 }
+
+.popupMessage {
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 24px;
+}
+
+#success {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+#success p {
+    margin: 0;
+}
+
+#error {
+    color: rgb(82, 3, 3);
+    background-color: rgb(197, 110, 110);
+}
+
+.spinner {
+    border: 8px solid var(--white);
+    border-top: 8px solid var(--light-blue);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    animation: spin .75s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
