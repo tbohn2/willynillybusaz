@@ -12,25 +12,25 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // setSending(true);
-        console.log(form.current);
-        // emailjs
-        //     .sendForm('service_bklllzl', 'template_zs7buxj', form.current, {
-        //         publicKey: '9boZX1F3ht1F4VDmO',
-        //     })
-        //     .then(
-        //         () => {
-        //             setSuccess(true);
-        //             setError('');
-        //             setSending(false);
-        //             console.log('SUCCESS!');
-        //         },
-        //         (error) => {
-        //             setError('Failed to send message, please try again later');
-        //             setSending(false);
-        //             console.log('FAILED...', error.text);
-        //         },
-        //     );
+        setSending(true);
+
+        emailjs
+            .sendForm('service_bklllzl', 'template_zs7buxj', form.current, {
+                publicKey: '9boZX1F3ht1F4VDmO',
+            })
+            .then(
+                () => {
+                    setSuccess(true);
+                    setError('');
+                    setSending(false);
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    setError('Failed to send message, please try again later');
+                    setSending(false);
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
 
     return (
@@ -47,15 +47,15 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail} className="col-10 border d-flex flex-column align-items-center">
 
                 <label htmlFor="name" className="">Name</label>
-                <input type="text" className="col-10" id="name" name="name" placeholder="Name" />
+                <input type="text" className="col-10" id="name" name="name" placeholder="Name" required />
 
 
                 <label htmlFor="email" className="">Email</label>
-                <input type="email" className="col-10" id="email" name="email" placeholder="Email" />
+                <input type="email" className="col-10" id="email" name="email" placeholder="Email" required />
 
 
                 <label htmlFor="message" className="">Message</label>
-                <textarea className="col-10" id="message" name="message" rows="5" placeholder="e.g. custom shirts, bulk order, etc."></textarea>
+                <textarea className="col-10" id="message" name="message" rows="8" placeholder="e.g. custom shirts, bulk order, etc." required></textarea>
 
                 {sending ?
                     <button className="col-10 d-flex justify-content-center">
