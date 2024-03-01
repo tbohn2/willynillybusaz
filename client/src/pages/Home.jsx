@@ -14,12 +14,12 @@ const Home = () => {
             </div>
             <div id='aboutUs' className='col-10 d-flex flex-column align-items-center'>
                 <h2 className='annapurna-sil-bold col-10'>About Us</h2>
-                <p className='col-10 arvo'>Willy Nilly Bus AZ is a family-owned and operated business that
-                    has been providing transportation services in the Phoenix area for over 20 years.
-                    We are dedicated to providing safe, reliable, and affordable transportation to our customers. Our drivers are experienced and professional,
-                    and our vehicles are clean and well-maintained.
-                    We offer a variety of transportation services, including airport shuttle, charter bus, and party bus services.
-                    Whether you need transportation for a special event, a night out on the town, or a trip to the airport, Willy Nilly Bus AZ has you covered. Contact us today to learn more about our services and to book your transportation.</p>
+                <p className='col-10 arvo'>
+                    Hello! We are Ashley and Kristen, two sisters who live life Willy Nilly style! We bought a bus to sell custom shirts and other treasures we pick up along the way.
+                    We are passionate about making soaps that are free of harsh ingredients and full of nourishing plant-based goodness. Our handmade items such as t-shirts, soaps, candles,
+                    and bath bombs are all crafted within our Arizona homes. We hope you enjoy our products.
+                    Thank you for supporting our small business! Live life Willy Nilly!
+                </p>
             </div>
         </div>
     )
