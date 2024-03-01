@@ -8,7 +8,7 @@ import './styles/App.css'
 function App() {
 
   return (
-    <Router basename='/willynillybusaz'>
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
