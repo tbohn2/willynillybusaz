@@ -1,19 +1,37 @@
 :root {
     --blue: #43727a;
     --light-blue: #97d5ce;
-    --white: #d6d2d2;
+    --white: #ffffff;
 }
 
 body {
-    background-image: url('../assets/topFlower.png'), url('../assets/bottomFlower.png');
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    background-attachment: fixed;
-    background-size: 75%, 75%;
     background-color: var(--white);
     color: var(--blue);
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     min-height: 100vh;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+}
+
+#topFlower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#bottomFlower {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 30vh;
+    z-index: -1;
+    opacity: 0.5;
 }
