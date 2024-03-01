@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <header className="annapurna-sil-bold d-flex justify-content-evenly align-items-center">
             <h1 className="">WILLY NILLY BUS AZ</h1>
-            <div className="menu-container" onClick={handleMenuContainerClick}>
+            <div className="menu-container d-flex justify-content-center align-items-center" onClick={handleMenuContainerClick}>
                 <button type="button" className="menu-icon text-center" onClick={handleMenuClick}>&#9776;</button>
                 <ul className={menuOpen ? 'menu display-block' : 'hidden'}>
                     <li><Link to="/">About</Link></li>
